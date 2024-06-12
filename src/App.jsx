@@ -49,6 +49,7 @@ function App() {
 
   return (
     <div className='app'>
+      <h1>weather app</h1>
       <main>
         <div className="search-box">
           <input
@@ -63,7 +64,7 @@ function App() {
 
         {weather && (
           <div>
-            <h1>weather app</h1>
+
             <div className="location-box">
               <div className="location">{weather.location.name}, {weather.location.country} </div>
               <div className="date">{dateBuilder(new Date())}</div>
