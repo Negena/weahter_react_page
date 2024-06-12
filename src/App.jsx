@@ -47,7 +47,7 @@ function App() {
 
   return (
     <div className='app'>
-      <h1>weather app</h1>
+      <h1 style={{ marginLeft: "200px" }}>Weather app</h1>
       <main>
         <div className="search-box">
           <input
