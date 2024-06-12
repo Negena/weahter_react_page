@@ -16,8 +16,6 @@ function App() {
           setWeather(result)
 
           setQuery(result)
-        }).catch(err => {
-          window.location.reload()
         })
     }
     // if (e.key === "Enter") {
@@ -62,7 +60,7 @@ function App() {
           />
         </div>
 
-        {weather && (
+        {weather.location ? (
           <div>
 
             <div className="location-box">
@@ -74,7 +72,8 @@ function App() {
               <div className="weather">{weather.current.condition.text}</div>
             </div>
           </div>
-        )}
+        ) : <div>
+          <h1>not found, try again</h1></div>}
 
 
         {/* {(typeof weather != "undefined") ? (
